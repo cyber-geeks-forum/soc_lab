@@ -1,0 +1,162 @@
+body {
+    background-color: #222a36;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background: #222a36;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+     font-family: 'Share Tech Mono', monospace;
+    font-size: 1.2rem;
+    color: #0b0f14;
+    background: #bedede;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.action-card {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    background: #58a6ff;
+}
+
+/* Card Button */
+.card-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #00ff9f;  /* Neon green */
+    color: #0b0f14;             /* Dark text for contrast */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #00e68a;
+    box-shadow: 0 0 10px rgba(0, 255, 159, 0.7);
+}
+
+/* Table Styling */
+.styled-table {
+    color: #222a36;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.styled-table thead {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Status badges */
+.status {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.status.pending {
+    background: #ffeaa7;
+    color: #b7791f;
+}
+
+.status.in_progress {
+    background: #81ecec;
+    color: #0652DD;
+}
+
+.status.completed {
+    background: #55efc4;
+    color: #006266;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #007bff;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+.inline-form {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.stars {
+    font-size: 16px;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background: #a71d2a;
+}
